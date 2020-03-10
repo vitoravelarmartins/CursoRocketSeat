@@ -6,12 +6,31 @@
     <script>
       //JavaScript
 
-      function soma(n1, n2) {
-        var resultado = n1 + n2;
-        return resultado;
+      function retonaSexo(sexo) {
+        if (sexo == "M") {
+          return "Masculino";
+        } else if (sexo == "F") {
+          return "Femenino";
+        } else {
+          return "Outros";
+        }
       }
 
-      console.log(soma(2, 30));
+      function retornaTipoVeiculo(veiculo) {
+        switch (veiculo) {
+          case "C":
+            return "Carro";
+          case "M":
+            return "Moto";
+          default:
+            return "Indisponivel";
+        }
+      }
+
+      console.log(retonaSexo("M"));
+      console.log(retornaTipoVeiculo("C"));
+      console.log(retornaTipoVeiculo("M"));
+      console.log(retornaTipoVeiculo("J"));
     </script>
   </body>
 </html>
