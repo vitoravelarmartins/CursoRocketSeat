@@ -5,19 +5,14 @@
   <body>
     <script>
       //JavaScript
-
-      var falsoArray = ["vitor", "diego", 1, 2, 3, 4, 8, 10];
-
-      // for (var i = 0; i <= 100; i++) {
-      //   console.log(falsoArray[i]);
-      // }
-
-      var j = 0;
-      //console.log(falsoArray.length);
-      while (j <= falsoArray.length) {
-        console.log(falsoArray[j]);
-        j++;
+      x = 0;
+      y = 1;
+      function somaAlgo() {
+        console.log(x + y);
+        x++;
       }
+      setInterval(somaAlgo, 1000);
+      setTimeout(somaAlgo, 5000);
     </script>
   </body>
 </html>
