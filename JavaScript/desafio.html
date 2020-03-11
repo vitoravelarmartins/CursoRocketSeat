@@ -1,0 +1,31 @@
+<html>
+  <head>
+    Curso JavaScript
+  </head>
+  <body>
+    <script>
+      //JavaScript
+      var endereco = {
+        rua: "Rua dos pinheiros",
+        numero: 1293,
+        bairro: "Centro",
+        cidade: "São Paulo",
+        uf: "SP"
+      };
+
+      function concatenaObjeto(endereco) {
+        console.log(
+          "O usuario mora em ",
+          endereco.rua,
+          " / ",
+          endereco.uf + ", no bairro ",
+          endereco.bairro + ", na rua",
+          '"' + endereco.rua + '"',
+          "com nº",
+          endereco.numero
+        );
+      }
+      setTimeout(concatenaObjeto(endereco), 1000);
+    </script>
+  </body>
+</html>
