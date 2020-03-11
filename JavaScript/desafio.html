@@ -26,6 +26,74 @@
         );
       }
       setTimeout(concatenaObjeto(endereco), 1000);
+
+      function pares(x, y) {
+        if (y < x) {
+          while (y < x) {
+            if (y % 2 == 0) {
+              console.log(y);
+            }
+            y++;
+          }
+        } else {
+          while (x < y) {
+            if (x % 2 == 0) {
+              console.log(x);
+            }
+            x++;
+          }
+        }
+      }
+      pares(2, 5);
+
+      var skills = ["Javascript", "ReactJS", "React Native"];
+      function temHabilidade(skills, habilidade) {
+        if (skills.indexOf(habilidade) > -1) {
+          return true;
+        }
+      }
+      console.log(temHabilidade(skills, "Javascript"));
+
+      function experiencia(anos) {
+        if (anos >= 7) {
+          console.log("Jedi Master");
+        } else if (anos > 3) {
+          console.log("Avançado");
+        } else if (anos > 1) {
+          console.log("Intermediario");
+        } else {
+          console.log("Iniciante");
+        }
+      }
+      var anosDeEstudo = 1;
+      experiencia(anosDeEstudo);
+
+      var usuarios = [
+        {
+          nome: "Diego",
+          habilidades: ["Javascript", "ReactJS", "Redux"]
+        },
+        {
+          nome: "Gabriel",
+          habilidades: ["VueJS", "Ruby on Rails", "Elixir"]
+        },
+        {
+          nome: "Jesus",
+          habilidades: ["VueJS", "Ruby on Rails", "Elixir"]
+        }
+      ];
+
+      function concatenaTudo(objUser) {
+        for (let valor of objUser) {
+          console.log(
+            valor.nome,
+            "possui as habilidades:",
+            valor.habilidades.join(", ")
+          );
+        }
+      }
+
+      concatenaTudo(usuarios);
     </script>
   </body>
 </html>
