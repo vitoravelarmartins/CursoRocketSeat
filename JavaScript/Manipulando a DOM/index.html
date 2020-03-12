@@ -7,14 +7,18 @@
   </head>
   <body>
     <div id="app">
-      <input type="text" name="nome" id="nome" />
-      <button class="botao">Me Pressione</button>
+      <input id="nome" />
       <script>
-        var inText = document.getElementById("nome");
-        var buttunClick = document.querySelector("button");
-        buttunClick.onclick = function() {
-          alert(inText.value);
-        };
+        var criaElemento = document.createElement("a");
+        criaElemento.setAttribute("href", "www.google.com");
+
+        var textElemento = document.createTextNode("Aqui Abre google");
+        criaElemento.appendChild(textElemento);
+
+        var divElemento = document.getElementById("app");
+        divElemento.appendChild(criaElemento);
+        var inputElement = document.getElementById("nome");
+        divElemento.removeChild(inputElement);
       </script>
     </div>
   </body>
