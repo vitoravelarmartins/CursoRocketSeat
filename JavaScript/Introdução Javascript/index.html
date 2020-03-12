@@ -1,0 +1,38 @@
+<html>
+  <head>
+    Curso JavaScript
+  </head>
+  <body>
+    <script>
+      //JavaScript
+      // x = 0;
+      // y = 1;
+      // function somaAlgo() {
+      //   console.log(x + y);
+      //   x++;
+      // }
+      // setInterval(somaAlgo, 1000);
+      // setTimeout(somaAlgo, 5000);
+      var arrayUnifeob2 = [];
+      var arrayUnifeob = [arrayUnifeob2];
+      var i = 0;
+      console.log(arrayUnifeob.length);
+      while (arrayUnifeob2.length < 10) {
+        arrayUnifeob2.push("Unifeob" + i, Math.floor(Math.random() * 10));
+        arrayUnifeob.push("Unifeob" + i, Math.floor(Math.random() * 10));
+        i++;
+      }
+
+      var j = 0;
+      console.log(arrayUnifeob);
+      for (let valor of arrayUnifeob) {
+        console.log("Eu Sou", valor);
+
+        for (let ver of arrayUnifeob2) {
+          console.log("dentro", valor[j], ver);
+          j++;
+        }
+      }
+    </script>
+  </body>
+</html>
